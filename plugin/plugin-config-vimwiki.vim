@@ -12,7 +12,7 @@ let g:markdown_enable_spell_checking    = 0     " 关闭 VimWiki 中的 MarkDown
 nmap <Plug> <Plug>VimwikiDiaryGenerateLinks
 
 let s:cmd = "~/.vim/bundle/flw.vim/gen-vimwiki-diary-index.pl ~/vimwiki .mdwiki"
-execute "nmap <silent><unique> <Leader>w<Leader>i :call system('" . s:cmd . "')<CR>:VimwikiDiaryIndex<CR>"
+execute "nmap <silent><unique><buffer> <Leader>w<Leader>i :call system('" . s:cmd . "')<CR>:VimwikiDiaryIndex<CR>"
 
 let g:vimwiki_ext2syntax = {'.mdwiki': 'markdown', '.wiki': 'default'}
 
