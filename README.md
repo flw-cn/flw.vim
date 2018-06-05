@@ -68,7 +68,7 @@ mkdir -p ~/.vim/bundle
 cd ~/.vim/bundle
 git clone https://github.com/flw-cn/flw.vim.git ~/.vim/bundle/flw.vim
 # 安装，安装过程中会生成 .vimrc，请先移走你的 ~/.vimrc
-(cd flw.vim; git checkout develop; ./install.sh)
+(cd flw.vim; ./install.sh)
 ```
 
 ## 贡献指南
