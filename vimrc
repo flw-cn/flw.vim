@@ -19,6 +19,9 @@ Plugin 'VundleVim/Vundle.vim'
 " flw 的 vim profile
 Plugin 'flw-cn/flw.vim'
 
+" 为数不多的支持 24 位真彩色的 Vim 主题
+Plugin 'morhetz/gruvbox'
+
 " 通用开发支持 ---{{{
 " YouCompleteMe 是个很高大上的自动完成方案
 if ( has("unix") ) | Plugin 'Valloric/YouCompleteMe' | endif

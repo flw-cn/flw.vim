@@ -13,22 +13,6 @@ set cpo&vim
 " 启动语法识别
 syntax on
 
-if has("gui_macvim")
-    set macligatures
-    set guifont=Fira\ Code\ Light:h16
-    colorscheme darkblue
-elseif has("gui_running")
-    colorscheme darkblue
-
-    hi Visual                       guibg=Yellow
-    hi Folded       guifg=#CCCCCC   guibg=#900090
-    hi FoldColumn   guifg=#CCCCCC   guibg=#900090
-    hi DiffText                     guibg=#CC0000
-    hi CursorLine                   guibg=#000060
-else
-    colorscheme flw
-endif
-
 " 修正和 tmux 配合时背景色刷新不正常的问题
 set t_ut=
 
