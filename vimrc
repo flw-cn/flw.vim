@@ -58,6 +58,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'jsx/jsx.vim'
 Plugin 'groenewege/vim-less'
 Plugin 'ap/vim-css-color'
+Plugin 'gorodinskiy/vim-coloresque'
 " }}}
 
 " 各种编程语言支持 ---{{{
@@ -110,6 +111,14 @@ Plugin 'ConradIrwin/vim-bracketed-paste'
 " Plugin 'VincentCordobes/vim-translate'
 " 翻译工具
 " Plugin 'LanguageTool'
+
+" 消灭盘古之白！
+Plugin 'hotoo/pangu.vim'
+
+" Emoji（绘文字）支持
+Plugin 'mattn/emoji-vim'
+Plugin 'junegunn/vim-emoji'
+
 " }}}
 
 " 所有的 Plugin 都必须写在 vundle#begin() 和 vundle#end() 之间。

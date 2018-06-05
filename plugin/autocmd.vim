@@ -29,4 +29,6 @@ augroup filetypedetect
     autocmd! BufRead,BufNewFile *.p6 setfiletype perl6
 augroup END
 
+" 消灭盘古之白
+autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.cnx call PanGuSpacing()
 "}}}
