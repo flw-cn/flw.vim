@@ -128,4 +128,9 @@ set fileencodings=utf-8,gbk,big5,euc-jp
 " 关闭拼写检查
 set nospell
 
+inoremap jj <Esc>
+inoremap kk <Esc>
+inoremap jk <Esc>
+inoremap kj <Esc>
+
 "}}}
