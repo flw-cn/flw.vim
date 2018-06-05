@@ -14,18 +14,8 @@ nmap <silent> <S-TAB>   <C-W>p
 " nmap <silent> <Up>    <C-W>+:unlet! t:flwwinlayout<CR>
 " nmap <silent> <Down>  <C-W>-:unlet! t:flwwinlayout<CR>
 
-" 窗口放大缩小，模仿 Turbo C 风格的。
-function! FlwSaveOrRestoreLayout()
-    if exists("t:flwwinlayout")
-        execute t:flwwinlayout
-        unlet t:flwwinlayout
-    else
-        let t:flwwinlayout=winrestcmd()
-        execute "normal \<C-W>_\<C-W>|"
-    endif
-endfunction
-nmap <silent> <F11> :call FlwSaveOrRestoreLayout()<CR>
-imap <silent> <F11> <ESC>:call FlwSaveOrRestoreLayout()<CR>a
+nmap <silent> <F11> :call flw#window#zoomToggle()<CR>
+imap <silent> <F11> <ESC>:call flw#window#zoomToggle()<CR>a
 
 " 交换两个窗口，这个不太常用
 " nmap <F7> <C-W>x
