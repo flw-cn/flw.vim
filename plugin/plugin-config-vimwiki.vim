@@ -8,6 +8,12 @@ let g:vimwiki_hl_headers                = 1     " 章节标题高亮支持
 let g:vimwiki_hl_cb_checked             = 1     " 已完成的 TODO 项变灰
 let g:markdown_enable_spell_checking    = 0     " 关闭 VimWiki 中的 MarkDown 的拼写检查
 
+" 禁用原有的功能
+nmap <Plug> <Plug>VimwikiDiaryGenerateLinks
+
+let s:cmd = "~/.vim/bundle/flw.vim/gen-vimwiki-diary-index.pl ~/vimwiki .mdwiki"
+execute "nmap <silent><unique> <Leader>w<Leader>i :call system('" . s:cmd . "')<CR>:VimwikiDiaryIndex<CR>"
+
 let g:vimwiki_ext2syntax = {'.mdwiki': 'markdown', '.wiki': 'default'}
 
 " 定义第一个 wiki
