@@ -22,6 +22,9 @@ Plugin 'flw-cn/flw.vim'
 " 为数不多的支持 24 位真彩色的 Vim 主题
 Plugin 'morhetz/gruvbox'
 
+" Vim 中文文档，感谢 vimcdoc！虽然现在不怎么用了，但入门全靠它。
+Plugin 'yianwillis/vimcdoc'
+
 " 通用开发支持 ---{{{
 " YouCompleteMe 是个很高大上的自动完成方案
 if ( has("unix") ) | Plugin 'Valloric/YouCompleteMe' | endif
@@ -118,7 +121,6 @@ Plugin 'hotoo/pangu.vim'
 " Emoji（绘文字）支持
 Plugin 'mattn/emoji-vim'
 Plugin 'junegunn/vim-emoji'
-
 " }}}
 
 " 所有的 Plugin 都必须写在 vundle#begin() 和 vundle#end() 之间。
