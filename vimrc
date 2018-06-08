@@ -99,6 +99,8 @@ Plugin 'mattn/webapi-vim'
 Plugin 'wakatime/vim-wakatime'
 " 简单易用的 statusline 和 tabline 插件
 Plugin 'itchyny/lightline.vim'
+" 启动界面
+Plugin 'mhinz/vim-startify'
 " }}}
 
 " 小工具 ---{{{
