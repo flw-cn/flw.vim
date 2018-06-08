@@ -60,6 +60,7 @@ set cmdheight=1
 set backspace=indent,eol,start
 
 " 出错时不出声
+set belloff=all
 set noerrorbells
 set novisualbell
 set t_vb=
