@@ -55,6 +55,6 @@ else
     nmap <silent> <F12>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 endif
 
-nmap <silent> <F10> :tabe ~/vimwiki/程序员英语.mdwiki<CR>G
+nmap <silent> <F5> :tabe ~/vimwiki/程序员英语.mdwiki<CR>G
 
 "}}}
