@@ -1,3 +1,5 @@
+source ~/.vim/bundle/vim-plug/plug.vim
+
 " vim: set fdm=marker:
 call plug#begin('~/.vim/bundle')
 
