@@ -20,18 +20,7 @@ autocmd FileType godoc nnoremap <buffer><silent> K :q<CR>
 let g:syntastic_go_checkers = ['gometalinter']
 let g:syntastic_go_gometalinter_args = ['--disable-all', '--enable=vet']
 
-function! IfErr()
-  let bpos = wordcount()['cursor_bytes']
-  let out = systemlist('iferr -pos ' . bpos, bufnr('%'))
-  if len(out) == 1
-    return
-  endif
-  let pos = getcurpos()
-  call append(pos[1], out)
-  silent normal! j=2j
-  call setpos('.', pos)
-  silent normal! 4j
-endfunction
-
-autocmd FileType go iabb ife <C-O>:call IfErr()<CR>
+autocmd FileType go iabb ife <C-O><Plug>(go-iferr)
+autocmd FileType go nmap <F2> <Plug>(go-alternate-edit)
+autocmd FileType go nmap <F8> <Plug>(go-coverage-toggle)
 " }}}
