@@ -22,9 +22,6 @@ if version >= 700
     nmap <silent> gf <C-W>gf:tabmove<CR>
 endif
 
-" F3 开启/关闭粘贴模式，这个是老习惯了
-set pastetoggle=<F3>
-
 " Dieken 的功能
 " nnoremap <F2> :g//laddexpr expand("%") . ":" . line(".") . ":" . getline(".")<CR>:lopen<CR>
 " nnoremap <F3> :redir @a<CR>:g//<CR>:redir END<CR>:new<CR>:put! a<CR><CR>
