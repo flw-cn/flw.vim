@@ -91,6 +91,9 @@ endif
 " 开启光棒
 set cursorline
 
+" 80 列高亮，提醒边界线
+set colorcolumn=80
+
 if version >= 700
     " 只有当存在多个标签页时，才显示标签行。
     set showtabline=1
