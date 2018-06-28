@@ -27,7 +27,7 @@ autocmd User Startified setlocal cursorline
 
 " 每日格言
 let g:startify_custom_header = 
-    \ map(systemlist('fortune | col -b'), '"    ". v:val')
+    \ map(systemlist("fortune | sed 's/\x1b[^m]*m//g'"), '"    ". v:val')
 
 " 工程加载完成后，自动修改 tmux 标题
 autocmd SessionLoadPost	* call s:AutoRenameTmux()
