@@ -93,8 +93,6 @@ Plug 'mhinz/vim-startify'
 " 小工具 ---{{{
 " 用 Vim 编曲、播放音乐
 Plug 'daveyarwood/vim-alda'
-" 画线，画框图
-Plug 'vim-scripts/DrawIt'
 " 画表格
 Plug 'godlygeek/tabular'
 " 解决复制粘贴时的缩进错位问题
