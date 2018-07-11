@@ -9,10 +9,16 @@ let g:vimwiki_hl_cb_checked             = 1     " 已完成的 TODO 项变灰
 let g:markdown_enable_spell_checking    = 0     " 关闭 VimWiki 中的 MarkDown 的拼写检查
 
 " 禁用原有的功能
-nmap <Plug> <Plug>VimwikiDiaryGenerateLinks
+nmap <Plug>(disabled-1) <Plug>CalendarV
+nmap <Plug>(disabled-2) <Plug>CalendarH
+nmap <Plug>(disabled-3) <Plug>VimwikiDiaryGenerateLinks
 
-let s:cmd = "~/.vim/bundle/flw.vim/gen-vimwiki-diary-index.pl ~/vimwiki .mdwiki"
-execute "nmap <silent><unique><buffer> <Leader>w<Leader>i :call system('" . s:cmd . "')<CR>:VimwikiDiaryIndex<CR>"
+
+" 重新实现 Vimwiki 自带的生成日历索引页面的功能
+nmap <Plug>(flw-regenerate-diary-index) :<C-U>call flw#vimwiki#generate_diary_section()<CR>
+if !hasmapto('<Plug>(flw-regenerate-diary-index)')
+    nmap <silent><unique> <Leader>w<Leader>i <Plug>(flw-regenerate-diary-index)
+endif
 
 let g:vimwiki_ext2syntax = {'.mdwiki': 'markdown', '.wiki': 'default'}
 

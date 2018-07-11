@@ -23,3 +23,10 @@ function! flw#vimwiki#applyMarkdownPatch() abort
     let s:mkd_syntax.rxWikiLinkMatchDescr = s:markdownLinkMatchUrl
 endfunction
 
+let s:cmd = expand('<sfile>:p:h')
+let s:cmd = join([s:cmd, '..', '..', 'gen-vimwiki-diary-index.pl'], '/')
+let s:cmd = join([s:cmd, '~/vimwiki', '.mdwiki'], ' ')
+function! flw#vimwiki#generate_diary_section() abort
+    call system(s:cmd)
+    call vimwiki#diary#goto_diary_index(v:count1)
+endfunction
