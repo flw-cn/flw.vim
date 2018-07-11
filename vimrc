@@ -17,7 +17,7 @@ Plug 'yianwillis/vimcdoc'
 
 " 通用开发支持 ---{{{
 " YouCompleteMe 是个很高大上的自动完成方案
-if ( has("unix") ) | Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --go-completer --rust-completer --js-completer' } | endif
+if has("unix") | Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --go-completer --rust-completer --js-completer' } | endif
 " 由 UltiSnips 提供的 snippet 方案，及其推荐的附加模块 ---{{{
 Plug 'SirVer/UltiSnips'
 " 代码片段模版
