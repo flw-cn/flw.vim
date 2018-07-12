@@ -108,6 +108,8 @@ Plug 'mattn/emoji-vim'
 Plug 'junegunn/vim-emoji'
 " 自动切换行号（插入模式绝对行号，Normal 模式相对行号）
 Plug 'myusuf3/numbers.vim'
+" 为快捷键提供帮助
+Plug 'hecal3/vim-leader-guide'
 " }}}
 
 " 所有的 Plug 都必须写在 plug#begin() 和 plug#end() 之间。
