@@ -116,6 +116,9 @@ Plug 'junegunn/vim-emoji'
 Plug 'myusuf3/numbers.vim'
 " 为快捷键提供帮助
 Plug 'hecal3/vim-leader-guide'
+" 快速增删改引号/括号
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 " }}}
 
 " 所有的 Plug 都必须写在 plug#begin() 和 plug#end() 之间。
