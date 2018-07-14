@@ -29,6 +29,13 @@ Plug 'vim-syntastic/syntastic'
 Plug 'majutsushi/tagbar'
 " 列表切割和粘连
 Plug 'AndrewRadev/splitjoin.vim'
+" 大名鼎鼎的 NERDTree
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
+" fzf
+Plug '/usr/local/opt/fzf'
+" 国产模糊查找插件，速度快功能多，配置简单，开箱即用，颜色好看
+Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 " }}}
 
 " 办公 ---{{{
@@ -39,7 +46,6 @@ Plug 'mattn/calendar-vim'
 " 文件管理，快速打开文件 ---{{{
 Plug 'yegappan/mru'
 Plug 'jlanzarotta/BufExplorer'
-Plug 'mbbill/VimExplorer'
 " }}}
 
 " Web 开发相关 ---{{{
