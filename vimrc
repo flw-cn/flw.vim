@@ -32,6 +32,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 " 大名鼎鼎的 NERDTree
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
+Plug 'flw-cn/vim-nerdtree-l-open-h-close'
 " fzf
 Plug '/usr/local/opt/fzf'
 " 国产模糊查找插件，速度快功能多，配置简单，开箱即用，颜色好看
