@@ -1,3 +1,7 @@
+if has('python3')
+    silent! python3 1
+endif
+
 source ~/.vim/bundle/vim-plug/plug.vim
 
 " vim: set fdm=marker:
