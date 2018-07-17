@@ -9,6 +9,11 @@ let g:go_doc_command = ["godoc"]
 let g:go_def_reuse_buffer = 1
 let g:go_list_type = "quickfix"
 
+let g:go_highlight_extra_types = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_generate_tags = 1
+
 autocmd FileType go nmap gK <Plug>(go-doc-tab)
 autocmd FileType go nmap gD <Plug>(go-def-tab)
 autocmd FileType go nmap gI <Plug>(go-info)
