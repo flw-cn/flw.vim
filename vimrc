@@ -41,6 +41,8 @@ Plug 'flw-cn/vim-nerdtree-l-open-h-close'
 Plug '/usr/local/opt/fzf'
 " 国产模糊查找插件，速度快功能多，配置简单，开箱即用，颜色好看
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
+" Ack
+Plug 'mileszs/ack.vim'
 " }}}
 
 " 办公 ---{{{
