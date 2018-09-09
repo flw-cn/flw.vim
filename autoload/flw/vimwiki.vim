@@ -7,7 +7,7 @@ function! flw#vimwiki#applyMarkdownPatch() abort
     let s:markdownLinkPrefix = '['
     let s:markdownLinkSuffix = ']()'
 
-    let magic_chars = '.*[]\^$'
+    let magic_chars = '.*[]()\^$'
     let valid_chars = '[^\\]'
 
     let s:markdownLinkPrefix = escape(s:markdownLinkPrefix, magic_chars)
